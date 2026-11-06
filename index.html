@@ -4,10 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>Rezerwacja miejsc w kinie</title>
 </head>
 <body>
-    
+<div class="container py-4">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-7">
+
+                <h2 class="mb-3">Wybierz film:</h2>
+
+                <select id="filmy" class="form-select mb-4">
+                    <option id="f1">Gwiezdne wojny: Wojny klonów</option>
+                    <option id="f2">Avengers: Doomsday</option>
+                    <option id="f3">Obecność</option>
+                </select>
+
+                <div class="bg-dark text-white text-center small py-1 rounded-bottom-pill mb-4">EKRAN</div>
+
+                <div id="sala"></div>
+
+                <div class="d-flex justify-content-center gap-2 mt-4">
+                    <span class="badge border border-success text-success">wolne</span>
+                    <span class="badge text-bg-primary">wybrane</span>
+                    <span class="badge text-bg-secondary">zajęte</span>
+                </div>
+
+                <div id="podsumowanie" class="alert alert-light border text-center mt-4"></div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
